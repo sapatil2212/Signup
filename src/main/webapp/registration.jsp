@@ -29,11 +29,11 @@
 							<div class="form-group">
 								<label for="name"><i
 									class="zmdi zmdi-account material-icons-name"></i></label> <input
-									type="text" name="name" id="name" placeholder="Your Name" />
+									type="text" name="name" id="name" placeholder="Your Name"  />
 							</div>
 							<div class="form-group">
 								<label for="email"><i class="zmdi zmdi-email"></i></label> <input
-									type="email" name="email" id="email" placeholder="Your Email" />
+									type="email" name="email" id="email" placeholder="Your Email"  />
 							</div>
 							<div class="form-group">
 								<label for="pass"><i class="zmdi zmdi-lock"></i></label> <input
@@ -47,7 +47,7 @@
 							<div class="form-group">
 								<label for="contact"><i class="zmdi zmdi-lock-outline"></i></label>
 								<input type="text" name="contact" id="contact"
-									placeholder="Contact no" />
+									placeholder="Contact no"  />
 							</div>
 							<div class="form-group">
 								<input type="checkbox" name="agree-term" id="agree-term"
@@ -85,9 +85,27 @@ var status = document.getElementById("status").value;
 if(status=="success"){
 	swal("Congrats", "Account Created Successfully", "success");
 }
+
+if(status=="invalidName"){
+	swal("Congrats", "Please Enter Valid Username", "error");
+}
+if(status=="invalidEmail"){
+	swal("Congrats", "Please Enter Valid Email", "error");
+}
+if(status=="invalidupwd"){
+	swal("Congrats", "Please Enter Valid Password", "error");
+}
+if(status=="invalidReupwd"){
+	swal("Congrats", "Please Enter Confirm Password", "error");
+}
+if(status=="invalidumobile"){
+	swal("Congrats", "Please Enter Valid Mobile No", "error");
+}
+if(status=="EnterValidMobileNo"){
+		swal("Congrats", "Mobile No should be of 10 Digit", "error");
+	}
 </script>
 
 
 </body>
-<!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
